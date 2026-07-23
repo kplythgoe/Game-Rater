@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* CSS RESET - START */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+h1 + p,
+h2 + p,
+h3 + p {
+  margin-top: 0.5em;
+}
+
+/* CSS RESET - END */
+
+body {
+  margin: 0;
+  background-color: #2d2d2d;
+}
+
+header {
+  background: #bf1313;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  max-width: 1536px;
+  padding: 0px 60px;
+  margin: auto;
+}
+
+.title h1 {
+  color: #fff;
+  font-family: "Chelsea Market", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-wrapper > div {
+  width: 33%;
+  display: flex;
+}
+
+.search {
+  justify-content: center;
+}
+
+.search input {
+  width: 300px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.results-count {
+  justify-content: flex-end;
+}
+
+.results-count {
+  color: #fff;
+}
+
+p,
+.search input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  color: #fff;
+}
+
+.boxes {
+  display: flex;
+  gap: 40px;
+  max-width: 1536px;
+  padding: 0px 60px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.box {
+  border: 2px solid #fff;
+  width: 50%;
+  height: 700px;
+  border-radius: 30px;
+  padding: 30px;
+  overflow: scroll;
+}
+
+.searched-games-list {
+  padding-top: 30px;
+}
+
+.single-game {
+  padding: 20px 0px;
+  border-bottom: 1px solid #5a5a5a;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.single-game:hover {
+  background: #3a3a3a;
+}
+
+.single-game:first-child {
+  border-top: 1px solid #5a5a5a;
+}
+
+.single-game-title {
+  padding-bottom: 10px;
+}
+
+.single-game-info {
+  display: flex;
+  gap: 30px;
+}
+
+.single-game-image img {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-log-averages {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.game-log-count {
+  padding-bottom: 20px;
+}
+
+.game-log-count p,
+.current-game-name p {
+  font-size: 24px;
+}
+
+.current-game-image img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.game-log-summary {
+  background: #5a5a5a;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.current-game-name {
+  padding: 20px 0;
+}
+
+.current-game-information p:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.information-rating-section {
+  display: flex;
+  gap: 30px;
+}
+
+.current-game-information {
+  width: 55%;
+}
+
+.ratings-box-whole {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ratings-box {
+  background-color: #5a5a5a;
+  padding: 20px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button {
+  background: #bf1313;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.close-window {
+  display: flex;
+  justify-content: flex-end;
+}
